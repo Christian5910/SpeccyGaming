@@ -1,0 +1,42 @@
+{
+  "versao": 2,
+  "atualizado": "2026-10-16",
+  "jogos": [
+    {
+      "id": "dicion",
+      "nome": "DiciON!",
+      "descricao": "Adivinhe a palavra secreta de 5 letras em 6 tentativas.",
+      "curta": "Adivinhe a palavra de 5 letras",
+      "url": "https://dicion.netlify.app/",
+      "icone": "img/dicion.png",
+      "tag": "Palavras"
+    },
+    {
+      "id": "2048on",
+      "nome": "2048ON!",
+      "descricao": "Junte blocos iguais até chegar ao 2048.",
+      "curta": "Junte os blocos até o 2048",
+      "url": "https://2048on.netlify.app/",
+      "icone": "img/2048on.png",
+      "tag": "Puzzle"
+    },
+    {
+      "id": "mineson",
+      "nome": "MinesON!",
+      "descricao": "Campo minado com tutorial, dicas e explosão. Ideal para quem nunca jogou.",
+      "curta": "Campo minado, do zero ao expert",
+      "url": "https://mineson.netlify.app/",
+      "icone": "img/mineson.png",
+      "tag": "Lógica"
+    },
+    {
+      "id": "chezzon",
+      "nome": "ChezzON!",
+      "descricao": "Xadrez contra o computador em 5 níveis ou com um amigo no mesmo aparelho.",
+      "curta": "Xadrez com 5 níveis ou a dois",
+      "url": "https://chezzon.netlify.app/",
+      "icone": "img/chezzon.png",
+      "tag": "Estratégia"
+    }
+  ]
+}

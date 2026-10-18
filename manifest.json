@@ -1,0 +1,35 @@
+{
+  "id": "./",
+  "name": "Speccy Gaming",
+  "short_name": "Speccy",
+  "description": "A casa dos jogos ON!, grátis e offline.",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "lang": "pt-BR",
+  "categories": [
+    "games"
+  ],
+  "background_color": "#0d3c75",
+  "theme_color": "#007ACC",
+  "icons": [
+    {
+      "src": "./assets/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "./assets/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "./assets/icon-maskable-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}

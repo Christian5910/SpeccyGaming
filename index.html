@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
+  <title>Speccy Gaming</title>
+  <meta name="description" content="Speccy Gaming: a casa dos jogos ON!. Jogos leves, grátis e que funcionam offline." />
+  <meta name="theme-color" content="#007ACC" />
+  <meta property="og:title" content="Speccy Gaming" />
+  <meta property="og:description" content="Jogos leves, grátis e que funcionam offline." />
+  <meta property="og:image" content="https://speccygames.netlify.app/img/speccy.png" />
+  <meta property="og:url" content="https://speccygames.netlify.app/" />
+  <link rel="canonical" href="https://speccygames.netlify.app/" />
+  <link rel="manifest" href="manifest.json" />
+  <link rel="icon" href="assets/favicon.ico" />
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png" />
+  <script>/* aplica o tema antes de pintar (evita "piscar") */
+  try{var c=JSON.parse(localStorage.getItem('speccy.cfg')||'{}'),d=document.documentElement,r=c.reduzir;
+  if(r===undefined)r=matchMedia('(prefers-reduced-motion: reduce)').matches;
+  if(c.escuro)d.setAttribute('data-tema','escuro');if(r)d.setAttribute('data-reduzir','1')}catch(e){}</script>
+  <link rel="stylesheet" href="on.css" />
+  <link rel="stylesheet" href="hub.css" />
+  <script defer src="on.js"></script>
+  <script defer src="hub.js"></script>
+</head>
+<body>
+  <header>
+    <span class="header-espaco" aria-hidden="true"></span>
+    <h1>Speccy Gaming</h1>
+    <button id="tema-btn" class="header-btn" type="button" aria-label="Alternar modo escuro" aria-pressed="false"></button>
+  </header>
+
+  <main>
+    <section class="hero">
+      <img class="hero-logo" src="img/speccy.png" alt="Speccy Gaming" width="168" height="168" />
+      <h2>Jogos para jogar no navegador</h2>
+      <p>Jogos gratuitos que abrem direto no navegador, sem baixar nada. Depois do primeiro acesso, eles também funcionam offline.</p>
+    </section>
+
+    <section aria-labelledby="h-jogos">
+      <h2 id="h-jogos" class="secao"><svg class="ic-inline" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M11.5 6.027a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0m-1.5 1.5a.5.5 0 1 0 0-1 .5.5 0 0 0 0 1m2.5-.5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0m-1.5 1.5a.5.5 0 1 0 0-1 .5.5 0 0 0 0 1m-6.5-3h1v1h1v1h-1v1h-1v-1h-1v-1h1z"/><path d="M3.051 3.26a.5.5 0 0 1 .354-.613l1.932-.518a.5.5 0 0 1 .62.39c.655-.079 1.35-.117 2.043-.117.72 0 1.443.041 2.12.126a.5.5 0 0 1 .622-.399l1.932.518a.5.5 0 0 1 .306.729q.211.136.373.297c.408.408.78 1.05 1.095 1.772.32.733.599 1.591.805 2.466s.34 1.78.364 2.606c.024.816-.059 1.602-.328 2.21a1.42 1.42 0 0 1-1.445.83c-.636-.067-1.115-.394-1.513-.773-.245-.232-.496-.526-.739-.808-.126-.148-.25-.292-.368-.423-.728-.804-1.597-1.527-3.224-1.527s-2.496.723-3.224 1.527c-.119.131-.242.275-.368.423-.243.282-.494.575-.739.808-.398.38-.877.706-1.513.773a1.42 1.42 0 0 1-1.445-.83c-.27-.608-.352-1.395-.329-2.21.024-.826.16-1.73.365-2.606.206-.875.486-1.733.805-2.466.315-.722.687-1.364 1.094-1.772a2.3 2.3 0 0 1 .433-.335l-.028-.079zm2.036.412c-.877.185-1.469.443-1.733.708-.276.276-.587.783-.885 1.465a14 14 0 0 0-.748 2.295 12.4 12.4 0 0 0-.339 2.406c-.022.755.062 1.368.243 1.776a.42.42 0 0 0 .426.24c.327-.034.61-.199.929-.502.212-.202.4-.423.615-.674.133-.156.276-.323.44-.504C4.861 9.969 5.978 9.027 8 9.027s3.139.942 3.965 1.855c.164.181.307.348.44.504.214.251.403.472.615.674.318.303.601.468.929.503a.42.42 0 0 0 .426-.241c.18-.408.265-1.02.243-1.776a12.4 12.4 0 0 0-.339-2.406 14 14 0 0 0-.748-2.295c-.298-.682-.61-1.19-.885-1.465-.264-.265-.856-.523-1.733-.708-.85-.179-1.877-.27-2.913-.27s-2.063.091-2.913.27"/></svg> Jogos</h2>
+      <div id="jogos" class="cards" aria-live="polite">
+        <noscript><p>Ative o JavaScript para ver a lista de jogos.</p></noscript>
+      </div>
+    </section>
+
+    <section class="bloco" aria-labelledby="h-redes">
+      <h2 id="h-redes" class="secao">Fale comigo</h2>
+      <ul class="redes-linha" id="redes"></ul>
+    </section>
+
+    <section class="bloco pix" aria-labelledby="h-pix">
+      <h2 id="h-pix" class="secao"><svg class="ic-inline cafe" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 96.59 122.88" width="18" height="23" fill="currentColor" aria-hidden="true" focusable="false"><path fill-rule="evenodd" d="M42.65,7.68A26.83,26.83,0,0,1,46.83,0a43.57,43.57,0,0,0-1.44,10.6C45.54,17.07,48.57,20.05,53,28c6.4,11.52,3.3,22.66-5.21,31.85C50.85,49.59,52.29,43,50,35.47a34,34,0,0,0-2.74-6.22c-2.86-5.21-6-9.51-5.69-15.8a20.81,20.81,0,0,1,1.13-5.77ZM10.89,54.6a2.43,2.43,0,0,1,.54-1.06c1.57-2.46,5.24-4.54,10.36-6A73.09,73.09,0,0,1,36.34,45,26.9,26.9,0,0,1,36,49.35a65.37,65.37,0,0,0-12.66,2.24c-4.17,1.22-7,2.63-7.69,4l-.15.92c.28,1.52,3.22,3.1,7.84,4.45a82.84,82.84,0,0,0,22.28,2.68A82.89,82.89,0,0,0,67.85,61c4.63-1.35,7.58-2.94,7.85-4.46l-.09-.74c-.56-1.44-3.42-2.91-7.76-4.18a60.51,60.51,0,0,0-7.74-1.65,28,28,0,0,0,1.2-4.18,63.87,63.87,0,0,1,8,1.74c5.48,1.61,9.31,3.87,10.67,6.56a2.41,2.41,0,0,1,.33.83,4.7,4.7,0,0,1,.22,1.39c0,.12,0,.23,0,.34.18,1.71.3,3.39.38,5,5-1.58,8.79-1,11.46.93a10.42,10.42,0,0,1,4.14,7.65,17.1,17.1,0,0,1-1.86,9.27c-3.09,6.2-9.92,11.7-20.42,11.72-.37.66-.76,1.3-1.16,1.92a44.38,44.38,0,0,1,11.74,4.64c3.94,2.42,6.17,5.35,6.17,8.64,0,5-5.46,9.35-14.29,12.22-8,2.62-19.06,4.24-31.2,4.24s-23.19-1.62-31.21-4.24C5.46,115.77,0,111.46,0,106.42c0-3.29,2.23-6.22,6.17-8.64a44.62,44.62,0,0,1,12.06-4.72,53,53,0,0,1-7.1-17.67A50.69,50.69,0,0,1,10,65.22a55.22,55.22,0,0,1,.58-8.75v-.19a4.89,4.89,0,0,1,.31-1.68Zm4,7.55c0,1-.07,2-.06,3a47.1,47.1,0,0,0,1,9.22c2.76,12.66,8.86,21.3,16.2,26a25,25,0,0,0,27.63-.13c7.2-4.69,13.11-13.28,15.65-25.76a47.39,47.39,0,0,0,.88-8.81v-.35a1.22,1.22,0,0,1,0-.27c0-.91,0-1.84-.06-2.78a29.17,29.17,0,0,1-6.79,2.82A88.4,88.4,0,0,1,45.57,68a88.53,88.53,0,0,1-23.78-2.9,28.94,28.94,0,0,1-6.93-2.91ZM81,66.74A49.81,49.81,0,0,1,80,75.41a57.12,57.12,0,0,1-3.33,10.88c7-.75,11.53-4.62,13.68-8.93a12.39,12.39,0,0,0,1.38-6.66,5.7,5.7,0,0,0-2.14-4.2c-1.73-1.23-4.58-1.4-8.64.24ZM70,97.33a35.47,35.47,0,0,1-7.74,6.91,29.83,29.83,0,0,1-32.82.16,35.43,35.43,0,0,1-8.12-7.15,43.56,43.56,0,0,0-12.65,4.64c-2.46,1.51-3.85,3.06-3.85,4.53,0,2.71,4.18,5.44,11,7.64,7.56,2.47,18.07,4,29.72,4s22.15-1.52,29.71-4c6.77-2.2,11-4.93,11-7.64,0-1.47-1.39-3-3.85-4.53A42.93,42.93,0,0,0,70,97.33Zm-32-82.06c-1.06,7-.13,9.16,2.17,12.45,2.55,3.64,4.7,6.48,5.33,10.05.88,5-1.41,10.36-4.45,14.22,4.76-23.42-13.36-17.91-3.05-36.72Z"/></svg> Apoie o criador</h2>
+      <div class="pix-frame" aria-hidden="true"><pre>╔═══════════════•⊱✦⊰•═══════════════╗
+Me manda um pix?     ฅ^>⩊<^ ฅ
+╚═══════════════•⊱✦⊰•═══════════════╝</pre></div>
+      <img id="qrpix" src="assets/qrpix.png" alt="QR Pix - Apoie o criador" loading="lazy" decoding="async" width="200" height="200" />
+      <p class="assinatura">✩₊˚.⋆ Somos o Universo! ⋆⁺₊✧</p>
+    </section>
+  </main>
+
+  <footer>
+    <p class="assinatura-final">© Christian, 2026</p>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,7 @@
+# Netlify: o service worker nunca fica em cache (para as atualizações chegarem)
+/service-worker.js
+  Cache-Control: no-cache
+
+# a lista de jogos revalida rápido (jogo novo aparece logo)
+/jogos.json
+  Cache-Control: public, max-age=300, must-revalidate
