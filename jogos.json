@@ -1,6 +1,6 @@
 {
-  "versao": 2,
-  "atualizado": "2026-10-16",
+  "versao": 5,
+  "atualizado": "2026-10-23",
   "jogos": [
     {
       "id": "dicion",
@@ -36,6 +36,24 @@
       "curta": "Xadrez com 5 níveis ou a dois",
       "url": "https://chezzon.netlify.app/",
       "icone": "img/chezzon.png",
+      "tag": "Estratégia"
+    },
+    {
+      "id": "pacion",
+      "nome": "PaciON!",
+      "descricao": "Paciência Klondike com dicas, desfazer e jogos com solução garantida.",
+      "curta": "Paciência Klondike com dicas",
+      "url": "https://pacion.netlify.app/",
+      "icone": "img/pacion.png",
+      "tag": "Cartas"
+    },
+    {
+      "id": "igoon",
+      "nome": "IgoON!",
+      "descricao": "Go (囲碁) contra o computador em 5 níveis ou com um amigo, com lições e problemas de vida e morte.",
+      "curta": "Go com lições e problemas",
+      "url": "https://igoon.netlify.app/",
+      "icone": "img/igoon.png",
       "tag": "Estratégia"
     }
   ]
